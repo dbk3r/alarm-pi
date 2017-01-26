@@ -1,0 +1,133 @@
+@media only screen and (min-width: 680px) {
+    .topmenu li {
+        width: 24%;
+        height: 120px;
+        font-size: 1.4em;
+	}
+}
+
+
+.maindiv {
+  width:98%;
+  height: 99%;
+}
+
+.menu {
+  position: absolute;
+  top: 0px;
+  left:0px;
+  width:50%;
+  height:100%;
+  background-color: #444444;
+}
+
+.menu-schalter {
+  width:100%;
+  height:40px;
+  margin: 2px;
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.menu-schalter:hover {
+  background-color: #888888;
+}
+.add_btn{
+  font-size: 24px;
+  font-weight: bold;
+  color: #666666;
+}
+
+.btn {
+  text-align: center;
+  width:100%;
+}
+.mytextfield {
+  width:100%;
+  height: 30px;
+}
+.mycheckbox {
+  text-align: left;
+}
+
+.schalterOff {
+  width:100%;
+  height:40px;
+  margin: 4px;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.pinfield {
+  height:60px;
+  width:100%;
+  text-align: center;
+  font-size: 18px;
+
+}
+.pinboard-btn-x {
+  width:100%;
+  height:80px;
+  margin: 4px;
+  background-color: #444444;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+.pinboard-btn {
+  width:100%;
+  height:80px;
+  margin: 4px;
+  background-color: #444444;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+.pinboard-btn:hover {
+  background-color: #777777;
+}
+
+.schalter {
+  width:100%;
+  height:40px;
+  margin: 4px;
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+
+}
+
+.menu {
+  margin-bottom:35px;
+
+}
+
+
+body {
+  background-color: #dddddd;
+}
