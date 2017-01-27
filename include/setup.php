@@ -46,8 +46,9 @@
       <table width=100%>
        <tr><td width="30%" align="right">Name</td><td width="70%" align="left"><input id="cam_name" class="mytextfield" type="text"></input></td></tr>
        <tr><td align="right">URL</td align="left"><td><input id="cam_url" class="mytextfield" type="text"></input></td></tr>
+       <tr><td align="right">Ort</td align="left"><td><input id="cam_place" class="mytextfield" type="text"></input></td></tr>
        <tr><td align="right">Benutzer</td><td align="left"><input id="cam_user" class="mytextfield" type="text"></input></td></tr>
-       <tr><td align="right">Passwort</td><td align="left"><input id="cam_passwd" class="mypassword" type="password"></input></td></tr>
+       <tr><td align="right">Passwort</td><td align="left"><input id="cam_password" class="mypassword" type="password"></input></td></tr>
        <tr><td></td><td align="left"><button class="new-entry-btn" id="add_cam">Hinzufügen</button></td></tr>
      </table>
     </div>

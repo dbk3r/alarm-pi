@@ -39,13 +39,15 @@ $( document ).ready(function() {
   });
 
   $(".new-entry-btn").click(function(){
-    var formData;
-    if ($(this.id) == "add_cam") {
-      formData = 'action=' + this.id + '&name=' + $("#cam_name").val() + '&url=' +  $("#cam_url").val()+ '&user=' +  $("#cam_user").val() + '&passwd=' +  $("#cam_passwd").val() + '&place=' +  $("#cam_place").val();
+    var formData = "";
+    alert(this.id);
+    if (this.id == "add_cam") {
+      formData = 'action=' + this.id + '&name=' + $("#cam_name").val() + '&url=' +  $("#cam_url").val()+ '&user=' +  $("#cam_user").val() + '&password=' +  $("#cam_password").val() + '&place=' +  $("#cam_place").val();
     }
-    if ($(this.id) == "add_switch") {
+    if (this.id == "add_switch") {
       formData = 'action=' + this.id + '&name=' + $("#switch_name").val() + '&desc=' +  $("#switch_desc").val()+ '&gpio=' +  $("#switch_gpio").val() + '&state=' +  $("#switch_state").val();
     }
+    alert(formData);
     $.ajax({
       type: 'POST',
       url:'include/db_action.php',
@@ -56,7 +58,8 @@ $( document ).ready(function() {
             alert("Datensatz erfolgreich hinzugefügt");
           }
           else {
-            alert("Fehler");
+            console.log(msg)
+
 
           }
            }

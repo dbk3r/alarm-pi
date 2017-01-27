@@ -6,6 +6,23 @@
 	}
 }
 
+.cam {
+    border: solid 1px;
+}
+
+.tbl-head {
+  text-align: center;
+  background-color: #666666;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+.cam-img {
+    max-width: 100%;
+    height: auto;
+}
 
 .maindiv {
   width:98%;

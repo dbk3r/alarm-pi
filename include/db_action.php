@@ -4,12 +4,15 @@
 
   if ($_POST['action'] == "add_switch") {
     $sql = "insert into dba_switch (switch-name,switch-description,switch-GPIO,switch-state,switch-ts) VALUES('" . $_POST['name'] . "','" . $_POST['desc'] . "','" . $_POST['gpio']. "','" .$_POST['state']. "','$ts')";
+    $conn->query($sql);
 
 
   }
 
   if ($_POST['action'] == "add_cam") {
-    $sql = "insert into dba_cams (cam-name,cam-url,cam-user,cam-passwd,cam-place) VALUES('" . $_POST['name'] . "','" . $_POST['url'] . "','" . $_POST['user']. "','" . $_POST['passwd']. "','" . $_POST['place']. "')";
+    $sql = "insert into dba_cams (cam-name,cam-url,cam-user,cam-password,cam-place) VALUES('" . $_POST['name'] . "','" . $_POST['url'] . "','" . $_POST['user']. "','" . $_POST['password']. "','" . $_POST['place']. "')";
+    $conn->query($sql);
+
   }
 
 
@@ -20,7 +23,6 @@
 
     }
 
-
   }
   if ($_POST['action'] == "del_switch") {
     $id = $_POST['id'];
@@ -30,5 +32,5 @@
     }
 
   }
-  print "OK";
+  print $sql;
  ?>
